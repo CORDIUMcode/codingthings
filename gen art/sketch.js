@@ -20,6 +20,20 @@ function setup() {
 }
 
 function draw() {
+
+  const dottedLines = new DottedLines()
+  dottedLines.render()
+
+  const centeredShape = new CenteredShape()
+  centeredShape.render()
+
+  const ringOfShapes = new RingOfShapes()
+  ringOfShapes.render()
+
+  const steppedHexagons = new SteppedHexagons()
+  steppedHexagons.render()
+
+
   let picker = random(1)
   if (picker > 0.3) {
     layers.push(new OutlineShape())
