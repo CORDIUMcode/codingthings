@@ -158,7 +158,7 @@ class RingOfShapes extends Layer {
       } else if (this.randomShape >= 0.33 && this.randomShape < 0.66) {
         rect(0, this.center, this.radius, this.radius)
       } else if (this.randomShape >= 0.66) {
-        myTriangle(this.center, this.radius, this.direction)
+        triangle(this.center / 2, this.radius, 0, this.center / 2, this.radius, 0)
       }
       rotate(this.angle)
     }
