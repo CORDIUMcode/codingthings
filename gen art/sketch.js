@@ -20,21 +20,6 @@ function setup() {
 }
 
 function draw() {
-
-  // const circles = new Circles()
-  // circles.render();
-
-  // const simpleLines = new SimpleLines()
-  // simpleLines.render();
-
-  // const outlineShape = new OutlineShape()
-  // outlineShape.render()
-
-  //testLines()
-  //outlineShape()
-  // simpleLines()
-  //circles()
-
   let picker = random(1)
   if (picker > 0.3) {
     layers.push(new OutlineShape())
@@ -49,5 +34,9 @@ function draw() {
   if (picker > 0.3) {
     layers.push(new Circles())
   }
+  
+  layers.forEach(layer => {
+    layer.render()
+  })
 }
 
